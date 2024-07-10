@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    width: 90%;
+    max-width: 600px;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.input-group label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    justify-content: space-between;
+}
+
+button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calcular {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#limpar {
+    background-color: #f44336;
+    color: white;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+    display: block;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    font-size: 0.9em;
+}
+
+.instagram-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('instagram-icon.png');
+    background-size: cover;
+    vertical-align: middle;
+}
+
+
+#resultado-imc {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        width: 100%;
+    }
+}

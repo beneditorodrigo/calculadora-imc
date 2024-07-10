@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+    <main>
+        <h2>IMC - Índice de Massa Corporal</h2>
+        <p>O IMC é uma medida internacional usada para calcular se uma pessoa está no peso ideal.</p>
+        <form id="imc-form">
+            <div class="input-container">
+                <div class="input-group">
+                    <label for="altura">Altura <small>(ex.: 1,70)</small></label>
+                    <input type="number" id="altura" name="altura" placeholder="Metros" step="0.01" required>
+                </div>
+                <div class="input-group">
+                    <label for="peso">Peso <small>(ex.: 69,2)</small></label>
+                    <input type="number" id="peso" name="peso" placeholder="Quilos" step="0.01" required>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" id="calcular">Calcular</button>
+                <button type="button" id="limpar">Limpar</button>
+            </div>
+            <label id="resultado-imc">IMC: </label>
+        </form>
+        <h3>VEJA A INTERPRETAÇÃO DO IMC</h3>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <th>OBESIDADE (GRAU)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>II</td>
+                    </tr>
+                    <tr>
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>III</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+        <footer>
+            <ul>
+                <li>Desenvolvido por <span class="instagram-icon"></span> _tech.bee</li>
+            </ul>
+        </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
